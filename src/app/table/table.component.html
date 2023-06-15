@@ -68,10 +68,18 @@
   </thead>
   <tbody>
     <tr *ngFor="let item of tableData">
-      <td>{{ item.instituteName }}</td>
+      <td>{{ item.course }}</td>
       <td><input type="checkbox" [(ngModel)]="item.checked" /></td>
-      <td><input type="file"  /></td>
-     
+      <td><input type="file" /></td>
+      <td>
+        <select [(ngModel)]="item.selectedOption">
+          <option value="option0" selected disabled>select</option>
+          <option value="option1">Verified</option>
+          <option value="option2">Not Available</option>
+          <option value="option3">Available but not able to Verify</option>
+          <option value="option4">Doubtful</option>
+        </select>
+      </td>
     </tr>
   </tbody>
 </table>

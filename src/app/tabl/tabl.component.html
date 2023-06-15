@@ -27,15 +27,17 @@
   </ng-container>
 
   <!-- Course -->
-<ng-container matColumnDef="position">
-    <th mat-header-cell *matHeaderCellDef>No.</th>
+  <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef>Course</th>
     <td mat-cell *matCellDef="let element">{{ element.position }}</td>
   </ng-container>
 
-<!-- yes/no -->
+  <!-- yes/no -->
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef>yes/no</th>
-    <td mat-cell *matCellDef="let element"></td>
+    <td mat-cell *matCellDef="let element">
+      <input type="checkbox" [(ngModel)]="element.checked" />
+    </td>
   </ng-container>
 
   <!-- Camera-Icon -->
