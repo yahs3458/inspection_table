@@ -1,0 +1,77 @@
+<!-- <div class="table-responsive">
+  <table>
+    <thead>
+      <tr>
+        <th>Statuary Documents</th>
+        <th>yes/no</th>
+        <th>if yes endorse letter</th>
+        <th>remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableData">
+        <td>{{ row.course }}</td>
+        <td><input type="checkbox" /></td>
+        <td><button>Camera</button></td>
+        <td>
+          <select>
+            <option value="edit">Verified</option>
+            <option value="delete">Not Available</option>
+            <option value="">Available but not able to verify</option>
+            <option value="delete">Doubtful</option>
+          </select>
+        </td>
+        <td>
+          <div>
+            <button
+              class="btn btn-primary dropdown-toggle"
+              type="button"
+              id="dropdownMenu2"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li>
+                <button class="dropdown-item" type="button">Action</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">
+                  Another action
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">
+                  Something else here
+                </button>
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="submit">
+    <button>submit</button>
+  </div>
+</div> -->
+
+<table>
+  <thead>
+    <tr>
+      <th>Institute Name</th>
+      <th>Yes/No</th>
+      <th>Image</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of tableData">
+      <td>{{ item.instituteName }}</td>
+      <td><input type="checkbox" [(ngModel)]="item.checked" /></td>
+      <td><input type="file"  /></td>
+     
+    </tr>
+  </tbody>
+</table>
