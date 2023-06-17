@@ -20,10 +20,12 @@
       </ng-container>
 
       <!-- if yes enclose letter -->
+      
+      
       <ng-container matColumnDef="ifYes">
         <th mat-header-cell *matHeaderCellDef>if yes enclose letter</th>
         <td mat-cell *matCellDef="let element">
-          <button class="btn-button">
+          <button class="btn-button"(click)="openCamera()">
             <div class="button-camera">
               <i class="material-icons">cameraalt</i>
               <span> Camera </span>

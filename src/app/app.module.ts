@@ -8,6 +8,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { TblComponent } from './tbl/tbl.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { TblComponent } from './tbl/tbl.component';
     BrowserModule,
     MatTableModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
